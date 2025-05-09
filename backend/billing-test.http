@@ -1,5 +1,6 @@
 ### Créer une nouvelle souscription
 POST http://localhost:8082/api/subscriptions
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc0Njc1ODQ0MCwiZXhwIjoxNzQ2NzYyMDQwfQ.UjiENMp2SAKpw2f-7_40_aSnO3IGBEHqkvvx2AM0RjE
 Content-Type: application/json
 
 {
@@ -9,9 +10,11 @@ Content-Type: application/json
 
 ### Lister toutes les souscriptions
 GET http://localhost:8082/api/subscriptions
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc0Njc1ODQ0MCwiZXhwIjoxNzQ2NzYyMDQwfQ.UjiENMp2SAKpw2f-7_40_aSnO3IGBEHqkvvx2AM0RjE
 
 ### Vérifier si une agence a une souscription valide
 GET http://localhost:8082/api/subscriptions/AgenceAlpha/valid
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc0Njc1ODQ0MCwiZXhwIjoxNzQ2NzYyMDQwfQ.UjiENMp2SAKpw2f-7_40_aSnO3IGBEHqkvvx2AM0RjE
 
 ### Appeler Billing sécurisé
 GET http://localhost:8082/api/subscriptions/AgenceAlpha/valid
