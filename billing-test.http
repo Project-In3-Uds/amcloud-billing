@@ -1,0 +1,18 @@
+### Créer une nouvelle souscription
+POST http://localhost:8082/api/subscriptions
+Content-Type: application/json
+
+{
+  "agencyName": "AgenceAlpha",
+  "planType": "Premium"
+}
+
+### Lister toutes les souscriptions
+GET http://localhost:8082/api/subscriptions
+
+### Vérifier si une agence a une souscription valide
+GET http://localhost:8082/api/subscriptions/AgenceAlpha/valid
+
+### Appeler Billing sécurisé
+GET http://localhost:8082/api/subscriptions/AgenceAlpha/valid
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc0NTgzNzk5NSwiZXhwIjoxNzQ1ODQxNTk1fQ.v_PyMgITbVLJ8YykIaBVMM8vOM3IWXYjGdPSGrypZwQ
