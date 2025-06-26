@@ -1,5 +1,9 @@
+-- Dropping existing tables if they exist
+DROP TABLE IF EXISTS payment;
+DROP TABLE IF EXISTS subscription;
+-- Creating new tables for the subscription and payment system
 CREATE TABLE subscription (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    id BIGSERIAL PRIMARY KEY,
     agency_name VARCHAR(255) NOT NULL,
     plan_type VARCHAR(255) NOT NULL,
     start_date DATE NOT NULL,
@@ -8,7 +12,7 @@ CREATE TABLE subscription (
 );
 
 CREATE TABLE payment (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    id BIGSERIAL PRIMARY KEY,
     subscription_id BIGINT NOT NULL,
     amount DECIMAL(10, 2) NOT NULL,
     payment_date DATE NOT NULL,
