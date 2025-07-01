@@ -8,12 +8,12 @@ import io.github.cdimascio.dotenv.Dotenv;
 @SpringBootTest
 class BillingApplicationTests {
 
-	// Load .env file
+	/*  Load .env file
 	Dotenv dotenv = Dotenv.configure()
 	.load();
 
 // Set environment variables
-dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getValue()));
+dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getValue()));*/
 
  
 
